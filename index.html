@@ -23,6 +23,28 @@
       }
 
     </style>
+    <style>
+        .swiper-custom-prev,
+        .swiper-custom-next {
+            transition: color 0.3s ease;
+        }
+
+        .swiper-custom-prev:hover,
+        .swiper-custom-next:hover {
+            color: #fff
+        }
+
+        .swiper-pagination-bullet {
+            height: 8px;
+            width: 55px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.35);
+        }
+
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #ffffff;
+        }
+    </style>
     <title>Biniyog Barta</title>
 </head>
 
@@ -262,7 +284,7 @@
                         <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
                         <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
                     </div>
-                    
+
                     <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
 
                     <div class="flex gap-[4px] items-center text-xs text-gray-500">
@@ -805,47 +827,82 @@
             </div>
             <div class="col-span-2 w-full h-full">
                 <!-- Feature Image -->
-                <div class="h-[1000px]">
-                    <div class=" relative h-full">
-                        <img src=" ./assets/images/home//corporate/Image (3).png" alt="featured img"
-                            class="w-full h-full object-cover" />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent w-full h-full">
-                        </div>
-                        <div
-                            class="absolute top-1/2 left-0 w-full h-fit -translate-y-1/2 flex justify-between text-4xl pointer-event-none z-1 text-white/80 text-3xl">
+                <!-- Swiper Container -->
+                <div class="swiper swiper-1 h-[1000px] relative">
+                    <div class="swiper-wrapper">
 
-                            <i class="fa-sharp fa-solid fa-chevron-left pointer-event-all swiper-left"></i>
-                            <i class="fa-sharp fa-solid fa-chevron-right pointer-event-all swiper-right"></i>
-                        </div>
-                        <div
-                            class="text-white absolute w-[90%] left-1/2 -translate-x-1/2 bottom-20 flex flex-col gap-[12px]  z-1">
-                            <div class="flex flex-col gap-[16px]  text-white">
-                                <div class="flex gap-[4px] items-center ">
-                                    <ion-icon name="play" class="text-[9px]"></ion-icon>
-                                    <span class="text-[9px] font-semibold">কর্পোরেট কর্ণার</span>
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide relative h-full">
+                            <img src="./assets/images/home/corporate/Image (3).png" alt="featured img"
+                                class="w-full h-full object-cover" />
+
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            </div>
+
+                            <!-- Text -->
+                            <div
+                                class="text-white absolute w-[90%] left-1/2 -translate-x-1/2 bottom-20 flex flex-col gap-[12px] z-10">
+                                <div class="flex flex-col gap-[16px] text-white">
+                                    <div class="flex gap-[4px] items-center">
+                                        <ion-icon name="play" class="text-[9px]"></ion-icon>
+                                        <span class="text-[9px] font-semibold">কর্পোরেট কর্ণার</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="font-bold text-3xl leading-12">
+                                    <a href="detail.html">ধর্মের লেবাস পরে অনেকেই এখন রাজনীতির তালিম দিচ্ছে</a>
+                                </h2>
+
+                                <div class="flex gap-[4px] items-center text-xs pt-6">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span>২১ অক্টোবর, ২০২৫</span>
                                 </div>
                             </div>
-
-                            <h2 class="font-bold text-3xl leading-12"><a href="detail.html">ধর্মের লেবাস পরে অনেকেই এখন
-                                    রাজনীতির তালিম দিচ্ছে</a>
-                            </h2>
-
-                            <div class="flex gap-[4px] items-center text-xs pt-6">
-                                <ion-icon name="time-outline"></ion-icon>
-                                <span>২১ অক্টোবর, ২০২৫</span>
-                            </div>
                         </div>
-                        <!-- Slider Pagination -->
-                        <div class="flex gap-[10px] h-[8px] absolute left-1/2 -translate-x-1/2 bottom-8 z-1">
-                            <div class="block h-full w-[56px] rounded-full bg-white/40"></div>
-                            <div class="block h-full w-[56px] rounded-full bg-white/40"></div>
-                            <div class="block h-full w-[56px] rounded-full bg-white"></div>
-                            <div class="block h-full w-[56px] rounded-full bg-white/40"></div>
 
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide relative h-full">
+                            <img src="./assets/images/home/corporate/Image (2).png" alt="featured img"
+                                class="w-full h-full object-cover" />
+
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                            </div>
+
+                            <!-- Text -->
+                            <div
+                                class="text-white absolute w-[90%] left-1/2 -translate-x-1/2 bottom-20 flex flex-col gap-[12px] z-10">
+                                <div class="flex flex-col gap-[16px] text-white">
+                                    <div class="flex gap-[4px] items-center">
+                                        <ion-icon name="play" class="text-[9px]"></ion-icon>
+                                        <span class="text-[9px] font-semibold">কর্পোরেট কর্ণার</span>
+                                    </div>
+                                </div>
+
+                                <h2 class="font-bold text-3xl leading-12">
+                                    <a href="detail.html">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি
+                                        ব্যাংক</a>
+                                </h2>
+
+                                <div class="flex gap-[4px] items-center text-xs pt-6">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    <span>২২ অক্টোবর, ২০২৫</span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
+
+                    <!-- ✅ Navigation Arrows (only one pair, outside slides) -->
+                    <div
+                        class="absolute top-1/2 left-0 w-full -translate-y-1/2 flex justify-between text-4xl text-white/80 z-20">
+                        <div class="swiper-custom-prev cursor-pointer"><i class="fa-solid fa-chevron-left"></i></div>
+                        <div class="swiper-custom-next cursor-pointer"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+
+                    <!-- ✅ Pagination Dots -->
+                    <div class="swiper-pagination !bottom-6"></div>
                 </div>
             </div>
 
@@ -914,97 +971,184 @@
             </div>
             <!-- Controller -->
             <div class="flex items-center justify-end gap-[10px] mb-[20px]">
-                <div class="bg-grey-light text-grey-text rounded-md flex items-center justify-center h-[25px] w-[25px]">
+                <div
+                    class="bg-grey-light text-grey-text rounded-md flex items-center justify-center h-[25px] w-[25px] swiper-2-custom-prev cursor-pointer hover:bg-gray-200 transition-color duration-300">
                     <i class="fa-solid fa-angle-left text-xs leading-tight"></i>
                 </div>
-                <div class="bg-grey-light text-grey-text rounded-md flex items-center justify-center h-[25px] w-[25px]">
+                <div
+                    class="bg-grey-light text-grey-text rounded-md flex items-center justify-center h-[25px] w-[25px] swiper-2-custom-next cursor-pointer hover:bg-gray-200 transition-color duration-300">
                     <i class="fa-solid fa-angle-right text-xs leading-tight"></i>
                 </div>
             </div>
 
             <!-- slider media card -->
-            <div class="child_media_card flex flex-row gap-5 pb-20 border-b border-gray-200">
-                <!-- Small Card Start -->
-                <div class="flex flex-col gap-[16px] pb-[16px] ">
+            <div class="swiper swiper-2 child_media_card  flex flex-row gap-5 pb-20 border-b border-gray-200">
+                <div class="swiper-wrapper">
+                    <!-- Small Card Start -->
+                    <div class="swiper-slide flex flex-col gap-[16px] pb-[16px] ">
 
-                    <div class="w-full h-[218px]">
-                        <img src="./assets/images/detail/Image (5).png" class="h-full w-full object-cover" />
+                        <div class="w-full h-[218px]">
+                            <img src="./assets/images/detail/Image (5).png" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="flex gap-[4px] items-center ">
+                            <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                            <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        </div>
+
+                        <a href="detail.html" class="font-bold">পাল্টা শুল্কে বাংলাদেশের পণ্যে মোট শুল্কহার কত
+                            দাঁড়াবে</a>
+
+                        <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span>২১ অক্টোবর, ২০২৫</span>
+                        </div>
                     </div>
+                    <!-- Small Card End -->
+                    <!-- Small Card Start -->
+                    <div class="swiper-slide flex flex-col gap-[16px] pb-[16px] ">
 
-                    <div class="flex gap-[4px] items-center ">
-                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
-                        <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        <div class="w-full h-[218px]">
+                            <img src="./assets/images/detail/Image (2).png" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="flex gap-[4px] items-center ">
+                            <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                            <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        </div>
+
+                        <a href="detail.html" class="font-bold">ব্যবসায়িক প্রতিযোগিতামূলক পরিবেশ চান বিনিয়োগকারীরা </a>
+
+                        <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span>২১ অক্টোবর, ২০২৫</span>
+                        </div>
                     </div>
+                    <!-- Small Card End -->
+                    <!-- Small Card Start -->
+                    <div class="swiper-slide flex flex-col gap-[16px] pb-[16px] ">
 
-                    <a href="detail.html" class="font-bold">পাল্টা শুল্কে বাংলাদেশের পণ্যে মোট শুল্কহার কত দাঁড়াবে</a>
+                        <div class="w-full h-[218px]">
+                            <img src="./assets/images/detail/Image (3).png" class="h-full w-full object-cover" />
+                        </div>
 
-                    <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
-                        <ion-icon name="time-outline"></ion-icon>
-                        <span>২১ অক্টোবর, ২০২৫</span>
+                        <div class="flex gap-[4px] items-center ">
+                            <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                            <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        </div>
+
+                        <a href="detail.html" class="font-bold">দেঅগ্রিম আয়ের ১০% সংরক্ষণের বাধ্যবাধকতা তুলে নিল
+                            বাংলাদেশ</a>
+
+                        <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span>২১ অক্টোবর, ২০২৫</span>
+                        </div>
                     </div>
+                    <!-- Small Card End -->
+                    <!-- Small Card Start -->
+                    <div class="swiper-slide flex flex-col gap-[16px] pb-[16px] ">
+
+                        <div class="w-full h-[218px]">
+                            <img src="./assets/images/detail/Image (4).png" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="flex gap-[4px] items-center ">
+                            <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                            <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        </div>
+
+                        <a href="detail.html" class="font-bold">৩০০ পোশাক কারখানার অচলাবস্থার সমাধান চায় বিজিএমইএ</a>
+
+                        <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span>২১ অক্টোবর, ২০২৫</span>
+                        </div>
+                    </div>
+                    <!-- Small Card End -->
+                    <!-- Small Card Start -->
+                    <div class="swiper-slide flex flex-col gap-[16px] pb-[16px] ">
+
+                        <div class="w-full h-[218px]">
+                            <img src="./assets/images/detail/Image (5).png" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="flex gap-[4px] items-center ">
+                            <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                            <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        </div>
+
+                        <a href="detail.html" class="font-bold">পাল্টা শুল্কে বাংলাদেশের পণ্যে মোট শুল্কহার কত
+                            দাঁড়াবে</a>
+
+                        <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span>২১ অক্টোবর, ২০২৫</span>
+                        </div>
+                    </div>
+                    <!-- Small Card End -->
+                    <!-- Small Card Start -->
+                    <div class="swiper-slide flex flex-col gap-[16px] pb-[16px] ">
+
+                        <div class="w-full h-[218px]">
+                            <img src="./assets/images/detail/Image (2).png" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="flex gap-[4px] items-center ">
+                            <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                            <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        </div>
+
+                        <a href="detail.html" class="font-bold">ব্যবসায়িক প্রতিযোগিতামূলক পরিবেশ চান বিনিয়োগকারীরা </a>
+
+                        <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span>২১ অক্টোবর, ২০২৫</span>
+                        </div>
+                    </div>
+                    <!-- Small Card End -->
+                    <!-- Small Card Start -->
+                    <div class="swiper-slide flex flex-col gap-[16px] pb-[16px] ">
+
+                        <div class="w-full h-[218px]">
+                            <img src="./assets/images/detail/Image (3).png" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="flex gap-[4px] items-center ">
+                            <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                            <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        </div>
+
+                        <a href="detail.html" class="font-bold">দেঅগ্রিম আয়ের ১০% সংরক্ষণের বাধ্যবাধকতা তুলে নিল
+                            বাংলাদেশ</a>
+
+                        <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span>২১ অক্টোবর, ২০২৫</span>
+                        </div>
+                    </div>
+                    <!-- Small Card End -->
+                    <!-- Small Card Start -->
+                    <div class="swiper-slide flex flex-col gap-[16px] pb-[16px] ">
+
+                        <div class="w-full h-[218px]">
+                            <img src="./assets/images/detail/Image (4).png" class="h-full w-full object-cover" />
+                        </div>
+
+                        <div class="flex gap-[4px] items-center ">
+                            <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                            <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                        </div>
+
+                        <a href="detail.html" class="font-bold">৩০০ পোশাক কারখানার অচলাবস্থার সমাধান চায় বিজিএমইএ</a>
+
+                        <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                            <ion-icon name="time-outline"></ion-icon>
+                            <span>২১ অক্টোবর, ২০২৫</span>
+                        </div>
+                    </div>
+                    <!-- Small Card End -->
                 </div>
-                <!-- Small Card End -->
-                <!-- Small Card Start -->
-                <div class="flex flex-col gap-[16px] pb-[16px] ">
-
-                    <div class="w-full h-[218px]">
-                        <img src="./assets/images/detail/Image (2).png" class="h-full w-full object-cover" />
-                    </div>
-
-                    <div class="flex gap-[4px] items-center ">
-                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
-                        <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
-                    </div>
-
-                    <a href="detail.html" class="font-bold">ব্যবসায়িক প্রতিযোগিতামূলক পরিবেশ চান বিনিয়োগকারীরা </a>
-
-                    <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
-                        <ion-icon name="time-outline"></ion-icon>
-                        <span>২১ অক্টোবর, ২০২৫</span>
-                    </div>
-                </div>
-                <!-- Small Card End -->
-                <!-- Small Card Start -->
-                <div class="flex flex-col gap-[16px] pb-[16px] ">
-
-                    <div class="w-full h-[218px]">
-                        <img src="./assets/images/detail/Image (3).png" class="h-full w-full object-cover" />
-                    </div>
-
-                    <div class="flex gap-[4px] items-center ">
-                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
-                        <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
-                    </div>
-
-                    <a href="detail.html" class="font-bold">দেঅগ্রিম আয়ের ১০% সংরক্ষণের বাধ্যবাধকতা তুলে নিল
-                        বাংলাদেশ</a>
-
-                    <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
-                        <ion-icon name="time-outline"></ion-icon>
-                        <span>২১ অক্টোবর, ২০২৫</span>
-                    </div>
-                </div>
-                <!-- Small Card End -->
-                <!-- Small Card Start -->
-                <div class="flex flex-col gap-[16px] pb-[16px] ">
-
-                    <div class="w-full h-[218px]">
-                        <img src="./assets/images/detail/Image (4).png" class="h-full w-full object-cover" />
-                    </div>
-
-                    <div class="flex gap-[4px] items-center ">
-                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
-                        <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
-                    </div>
-
-                    <a href="detail.html" class="font-bold">৩০০ পোশাক কারখানার অচলাবস্থার সমাধান চায় বিজিএমইএ</a>
-
-                    <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
-                        <ion-icon name="time-outline"></ion-icon>
-                        <span>২১ অক্টোবর, ২০২৫</span>
-                    </div>
-                </div>
-                <!-- Small Card End -->
             </div>
         </div>
     </main>
@@ -1015,28 +1159,53 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/99dee635b0.js" crossorigin="anonymous"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'vertical',
+        const swiper = new Swiper('.swiper-1', {
             loop: true,
-
-            // If we need pagination
+            slidesPerView: 1,
+            speed: 800,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-custom-next',
+                prevEl: '.swiper-custom-prev',
+            },
             pagination: {
                 el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
+                clickable: true,
             },
         });
+
+
+        // Corporate Swiper (independent from main swiper)
+        // Corporate Swiper (independent)
+        const corporateSwiper = new Swiper(".swiper-2", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            slidesPerGroup: 1,
+            loop: true,
+            speed: 700,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-2-custom-next",
+                prevEl: ".swiper-2-custom-prev",
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1280: { slidesPerView: 4 },
+            },
+        });
+
+
     </script>
+
+
 </body>
 
 </html>
