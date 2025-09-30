@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
     <style type="text/tailwindcss">
         @theme {
-        --font-ibm: "IBM Plex Sans", sans-serif;;
+        --font-ibm: "IBM Plex Sans", sans-serif;
+         --color-primary:#23A149;
+        --color-grey-text:#585858;
+        --color-gray-border:#D5D5D5;
+        --color-grey-light: #EFEFEF;
       }
 
     </style>
@@ -24,11 +28,11 @@
 <body>
     <main class="max-w-screen-xl mx-auto py-10 font-ibm">
         <div class="relative w-full flex justify-center z-0 mb-4">
-            <h3
-                class="h5 text-center bg-green-700 py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
+            <h3 class="h5 text-center bg-primary py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
                 সারাদেশ</h3>
             <div class="block absolute w-full h-px bg-gray-500 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
         </div>
+        <!-- Shorboshesh -->
         <div class="grid grid-cols-4 gap-[16px]">
             <div class="w-full flex flex-col gap-[16px]">
                 <!-- Small Card Start -->
@@ -96,8 +100,29 @@
             <div class="col-span-2 w-full">
                 <!-- Feature Image -->
                 <div class="mb-[16px] border-b border-gray-600 pb-[16px]">
-                    <img src="./assets/images/sharadesh/featured_img.png" alt="featured img"
-                        class="w-full h-[415px] object-cover" />
+                    <div class="relative ">
+                        <img src="./assets/images/sharadesh/featured_img.png" alt="featured img"
+                            class="w-full h-[415px] object-cover" />
+                        <div
+                            class="text-white absolute w-[95%] left-1/2 -translate-x-1/2 bottom-8 flex flex-col gap-[12px]  ">
+                            <div class="flex flex-col gap-[16px]  text-white">
+                                <div class="flex gap-[4px] items-center ">
+                                    <ion-icon name="play" class="text-sm"></ion-icon>
+                                    <span class="text-sm font-semibold">সারাদেশ</span>
+                                </div>
+                            </div>
+
+                            <h3 class="font-bold text-2xl leading-10">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি
+                                খুলবে সিটি
+                                ব্যাংক
+                            </h3>
+
+                            <div class="flex gap-[4px] items-center text-sm">
+                                <ion-icon name="time-outline"></ion-icon>
+                                <span>২১ অক্টোবর, ২০২৫</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Related New List -->
                 <div class="flex flex-col gap-[16px]">
@@ -178,7 +203,7 @@
                 </div>
                 <div class="relative w-full flex justify-center z-0">
                     <h3
-                        class="h5 text-center bg-green-700 py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
+                        class="h5 text-center bg-primary py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
                         সারাদেশ</h3>
                     <div class="block absolute w-full h-px bg-gray-500 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
 
@@ -223,12 +248,15 @@
                 <!-- Small Card End -->
             </div>
         </div>
-
+        <!-- Ads Banner -->
+        <div class="w-[80%] h-[108px] mx-auto my-20">
+            <img src="./assets/images/sharadesh/ads-banner.png" alt="ads banner" class="h-full w-full object-cover" />
+        </div>
         <!-- multimedia section -->
         <div class="media_section_container mt-[50px]">
             <div class="relative w-full flex justify-center z-0 mb-4">
                 <h3
-                    class="h5 text-center bg-green-700 py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
+                    class="h5 text-center bg-primary py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
                     মাল্টিমিডিয়া সংবাদ</h3>
                 <div class="block absolute w-full h-px bg-gray-500 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
             </div>
@@ -365,12 +393,443 @@
                 </div>
             </div>
         </div>
+
+        <!-- International -->
+        <div class="relative w-full flex justify-center z-0 mb-6 mt-16">
+            <h3 class="h5 text-center bg-primary py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
+                আন্তর্জাতিক</h3>
+            <div class="block absolute w-full h-px bg-gray-500 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
+        </div>
+        <div class="grid grid-cols-4 gap-[16px]">
+            <div class="col-span-2 w-full h-full">
+                <!-- Feature Image -->
+                <div class="h-full">
+                    <div class=" relative h-full">
+                        <img src=" ./assets/images/sharadesh/featured_img.png" alt="featured img"
+                            class="w-full h-full object-cover" />
+                        <div
+                            class="text-white absolute w-[90%] left-1/2 -translate-x-1/2 bottom-20 flex flex-col gap-[12px]  ">
+                            <div class="flex flex-col gap-[16px]  text-white">
+                                <div class="flex gap-[4px] items-center ">
+                                    <ion-icon name="play" class="text-[9px]"></ion-icon>
+                                    <span class="text-[9px] font-semibold">আন্তর্জাতিক</span>
+                                </div>
+                            </div>
+
+                            <h3 class="font-bold text-3xl leading-12">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি
+                                খুলবে সিটি
+                                ব্যাংক
+                            </h3>
+
+                            <div class="flex gap-[4px] items-center text-xs pt-6">
+                                <ion-icon name="time-outline"></ion-icon>
+                                <span>২১ অক্টোবর, ২০২৫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col gap-[16px]">
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+
+            </div>
+            <div class="w-full flex flex-col gap-[16px]">
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+
+            </div>
+
+
+        </div>
+
+        <!-- Corporate Cornert -->
+        <div class="relative w-full flex justify-center z-0 mb-6 mt-16">
+            <h3 class="h5 text-center bg-primary py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
+                কর্পোরেট কর্ণার</h3>
+            <div class="block absolute w-full h-px bg-gray-500 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
+        </div>
+        <div class="grid grid-cols-4 gap-[16px]">
+            <div class="w-full flex flex-col gap-[16px]">
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+
+            </div>
+            <div class="col-span-2 w-full h-full">
+                <!-- Feature Image -->
+                <div class="h-full">
+                    <div class=" relative h-full">
+                        <img src=" ./assets/images/sharadesh/featured_img.png" alt="featured img"
+                            class="w-full h-full object-cover" />
+                        <div
+                            class="text-white absolute w-[90%] left-1/2 -translate-x-1/2 bottom-20 flex flex-col gap-[12px]  ">
+                            <div class="flex flex-col gap-[16px]  text-white">
+                                <div class="flex gap-[4px] items-center ">
+                                    <ion-icon name="play" class="text-[9px]"></ion-icon>
+                                    <span class="text-[9px] font-semibold">আন্তর্জাতিক</span>
+                                </div>
+                            </div>
+
+                            <h3 class="font-bold text-3xl leading-12">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি
+                                খুলবে সিটি
+                                ব্যাংক
+                            </h3>
+
+                            <div class="flex gap-[4px] items-center text-xs pt-6">
+                                <ion-icon name="time-outline"></ion-icon>
+                                <span>২১ অক্টোবর, ২০২৫</span>
+                            </div>
+                        </div>
+                        <!-- Slider Pagination -->
+                        <div class="flex gap-[10px] h-[8px] absolute left-1/2 -translate-x-1/2 bottom-8">
+                            <div class="block h-full w-[56px] rounded-full bg-white/30"></div>
+                            <div class="block h-full w-[56px] rounded-full bg-white/30"></div>
+                            <div class="block h-full w-[56px] rounded-full bg-white"></div>
+                            <div class="block h-full w-[56px] rounded-full bg-white/30"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col gap-[16px]">
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Ads -->
+                <div class="w-full h-[327px]">
+                    <img class="w-full h-full object-cover" alt="ads" src="./assets/images/sharadesh/adds.png" />
+                </div>
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] border-b border-gray-600 last:border-b-0">
+
+                    <div class="w-full border border-gray-200">
+                        <img src="./assets/images/সিটি_ব্যাংকের_লোগো.svg" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
+                    </div>
+
+                    <h3 class="font-bold">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি ব্যাংক</h3>
+
+                    <div class="flex gap-[4px] items-center text-xs text-gray-500">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+
+            </div>
+        </div>
+
+        <!-- Ads Banner -->
+        <div class="w-[80%] h-[108px] mx-auto my-20">
+            <img src="./assets/images/sharadesh/ads-banner.png" alt="ads banner" class="h-full w-full object-cover" />
+        </div>
+
+        <!-- shomporkito khobor section -->
+        <div class="media_section_container mt-[50px]">
+            <div class="relative w-full flex justify-center z-0 mb-4">
+                <h3
+                    class="h5 text-center bg-primary py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
+                    সম্পর্কিত খবর</h3>
+                <div class="block absolute w-full h-px bg-gray-border top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
+            </div>
+            <!-- Controller -->
+            <div class="flex items-center justify-end gap-[10px] mb-[20px]">
+                <div class="bg-grey-light text-grey-text rounded-md flex items-center justify-center h-[25px] w-[25px]">
+                    <i class="fa-solid fa-angle-left text-xs leading-tight"></i>
+                </div>
+                <div class="bg-grey-light text-grey-text rounded-md flex items-center justify-center h-[25px] w-[25px]">
+                    <i class="fa-solid fa-angle-right text-xs leading-tight"></i>
+                </div>
+            </div>
+
+            <!-- slider media card -->
+            <div class="child_media_card flex flex-row gap-5 pb-20 border-b border-gray-200">
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] ">
+
+                    <div class="w-full h-[218px]">
+                        <img src="./assets/images/detail/Image (5).png" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                    </div>
+
+                    <h3 class="font-bold">পাল্টা শুল্কে বাংলাদেশের পণ্যে মোট শুল্কহার কত দাঁড়াবে</h3>
+
+                    <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] ">
+
+                    <div class="w-full h-[218px]">
+                        <img src="./assets/images/detail/Image (2).png" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                    </div>
+
+                    <h3 class="font-bold">ব্যবসায়িক প্রতিযোগিতামূলক পরিবেশ চান বিনিয়োগকারীরা </h3>
+
+                    <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] ">
+
+                    <div class="w-full h-[218px]">
+                        <img src="./assets/images/detail/Image (3).png" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                    </div>
+
+                    <h3 class="font-bold">দেঅগ্রিম আয়ের ১০% সংরক্ষণের বাধ্যবাধকতা তুলে নিল বাংলাদেশ</h3>
+
+                    <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+                <!-- Small Card Start -->
+                <div class="flex flex-col gap-[16px] pb-[16px] ">
+
+                    <div class="w-full h-[218px]">
+                        <img src="./assets/images/detail/Image (4).png" class="h-full w-full object-cover" />
+                    </div>
+
+                    <div class="flex gap-[4px] items-center ">
+                        <ion-icon name="play" class="text-green-600 text-xs"></ion-icon>
+                        <span class="text-xs text-green-600 font-semibold">কর্পোরেট কর্ণার</span>
+                    </div>
+
+                    <h3 class="font-bold">৩০০ পোশাক কারখানার অচলাবস্থার সমাধান চায় বিজিএমইএ</h3>
+
+                    <div class="flex gap-[4px] items-center text-[12px] text-grey-text">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <span>২১ অক্টোবর, ২০২৫</span>
+                    </div>
+                </div>
+                <!-- Small Card End -->
+            </div>
+        </div>
     </main>
 
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/99dee635b0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
