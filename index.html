@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
     <!-- icon cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <style type="text/tailwindcss">
         @theme {
         --font-ibm: "IBM Plex Sans", sans-serif;
@@ -807,6 +808,12 @@
                             class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent w-full h-full">
                         </div>
                         <div
+                            class="absolute top-1/2 left-0 w-full h-fit -translate-y-1/2 flex justify-between text-4xl pointer-event-none z-1 text-white/80 text-3xl">
+
+                            <i class="fa-sharp fa-solid fa-chevron-left pointer-event-all swiper-left"></i>
+                            <i class="fa-sharp fa-solid fa-chevron-right pointer-event-all swiper-right"></i>
+                        </div>
+                        <div
                             class="text-white absolute w-[90%] left-1/2 -translate-x-1/2 bottom-20 flex flex-col gap-[12px]  z-1">
                             <div class="flex flex-col gap-[16px]  text-white">
                                 <div class="flex gap-[4px] items-center ">
@@ -998,10 +1005,33 @@
     </main>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/99dee635b0.js" crossorigin="anonymous"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 
 </html>
