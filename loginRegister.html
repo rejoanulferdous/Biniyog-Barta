@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+    <style type="text/tailwindcss">
+        @theme {
+        --font-ibm: "IBM Plex Sans", sans-serif;
+        --color-primary:#23A149;
+        --color-grey-text:#585858;
+        --color-gray-border:#D5D5D5;
+        --color-grey-light: #EFEFEF;
+        --color-fb:#1877f2;
+        --color-google:#ea4335;
+      }
+
+    </style>
+    <title>Biniyog Barta - Login/Register</title>
+</head>
+
+<body>
+    <main class="max-w-screen-xl mx-auto py-10 font-ibm">
+        <div class="w-full flex items-center justify-center p-10">
+            <div class="w-full md:w-1/2 lg:w-1/3 mx-auto flex flex-col justify-center items-center">
+                <img src="./assets/images/logo.png" width="300" />
+                <!-- Login Register Tab -->
+                <div class="w-full tab shadow-lg mt-10">
+                    <!-- Tab Head -->
+                    <ul class="flex w-full items-center text-center ">
+                        <li class="w-1/2 py-3 cursor-pointer uppercase font-semibold border-r border-grey-light last:border-r-0"
+                            data-target="#login">
+                            Login
+                        </li>
+                        <li class="w-1/2 py-3 cursor-pointer uppercase font-semibold border-r border-grey-light last:border-r-0"
+                            data-target="#register">
+                            Register</li>
+                    </ul>
+                    <div>
+                        <div id="login" class="p-8">
+                            <!-- Login Form -->
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Email</label>
+                                    <input type="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 "
+                                        required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Password</label>
+                                    <input type="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 "
+                                        required>
+                                </div>
+                                <a href="./index.html" type="submit"
+                                    class="w-full bg-primary text-white py-2  hover:bg-opacity-90 cursor-pointer uppercase font-semibold flex justify-center items-center">Login</a>
+                            </form>
+                            <div class="relative w-full flex justify-center z-0 my-8">
+                                <div
+                                    class="text-center bg-primary w-12 h-12 flex items-center justify-center text-white inline-flex text-md leading-tight font-semibold rounded-full">
+                                    OR</div>
+                                <div
+                                    class="block absolute w-full h-px bg-gray-300 top-1/2 left-0 -translate-y-1/2 -z-[1]">
+                                </div>
+                            </div>
+                            <!-- Social Login -->
+                            <div class="flex flex-col items-center justify-center w-full gap-3">
+                                <a href="./index.html"
+                                    class="w-full bg-transparent border border-fb px-2 py-3 transition-color duration-300 hover:  hover:bg-fb text-black hover:text-white cursor-pointer uppercase font-semibold flex justify-center items-center uppercase font-semibold text-md md:text-lg gap-2 group">
+                                    <div
+                                        class="h-5 md:h-6 w-5 md:w-6 p-3 text-xs md:text-sm bg-fb rounded-full flex justify-center items-center text-white group-hover:bg-white group-hover:text-fb">
+                                        <i class="fa-brands fa-facebook-f "></i>
+                                    </div>
+                                    <span>Login with Facebook</span>
+                                </a>
+                                <a href="./index.html"
+                                    class="w-full bg-transparent border border-google px-2 py-3 transition-color duration-300 hover:  hover:bg-google text-black hover:text-white cursor-pointer uppercase font-semibold flex justify-center items-center uppercase font-semibold text-md md:text-lg gap-2 group">
+                                    <div
+                                        class="h-5 md:h-6 w-5 md:w-6 p-3 text-xs md:text-sm bg-google rounded-full flex justify-center items-center text-white group-hover:bg-white group-hover:text-google">
+                                        <i class="fa-brands fa-google "></i>
+                                    </div>
+                                    <span>Login with Google</span>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div id="register" class="hidden p-8">
+                            <form class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 "
+                                        required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Email</label>
+                                    <input type="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 "
+                                        required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700">Password</label>
+                                    <input type="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 "
+                                        required>
+                                </div>
+                                <a href="./index.html" type="submit"
+                                    class="w-full bg-primary text-white py-2  hover:bg-opacity-90 cursor-pointer uppercase font-semibold flex justify-center items-center">Register</a>
+                            </form>
+
+                            <div class="relative w-full flex justify-center z-0 my-8">
+                                <div
+                                    class="text-center bg-primary w-12 h-12 flex items-center justify-center text-white inline-flex text-md leading-tight font-semibold rounded-full">
+                                    OR</div>
+                                <div
+                                    class="block absolute w-full h-px bg-gray-300 top-1/2 left-0 -translate-y-1/2 -z-[1]">
+                                </div>
+                            </div>
+                            <!-- Social Register -->
+                            <div class="flex flex-col items-center justify-center w-full gap-3">
+                                <a href="./index.html"
+                                    class="w-full bg-transparent border border-fb px-2 py-3 transition-color duration-300 hover:  hover:bg-fb text-black hover:text-white cursor-pointer uppercase font-semibold flex justify-center items-center uppercase font-semibold text-md md:text-lg gap-2 group">
+                                    <div
+                                        class="h-5 md:h-6 w-5 md:w-6 p-3 text-xs md:text-sm bg-fb rounded-full flex justify-center items-center text-white group-hover:bg-white group-hover:text-fb">
+                                        <i class="fa-brands fa-facebook-f "></i>
+                                    </div>
+                                    <span>Register with Facebook</span>
+                                </a>
+                                <a href="./index.html"
+                                    class="w-full bg-transparent border border-google px-2 py-3 transition-color duration-300 hover:  hover:bg-google text-black hover:text-white cursor-pointer uppercase font-semibold flex justify-center items-center uppercase font-semibold text-md md:text-lg gap-2 group">
+                                    <div
+                                        class="h-5 md:h-6 w-5 md:w-6 p-3 text-xs md:text-sm bg-google rounded-full flex justify-center items-center text-white group-hover:bg-white group-hover:text-google">
+                                        <i class="fa-brands fa-google "></i>
+                                    </div>
+                                    <span>Register with Google</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/99dee635b0.js" crossorigin="anonymous"></script>
+    <script>
+        // Get all tab buttons and content divs
+        const tabButtons = document.querySelectorAll('.tab ul li');
+        const tabContents = document.querySelectorAll('.tab > div > div');
+
+        // Add active class to first tab by default
+        tabButtons[0].classList.add('bg-primary', 'text-white');
+        tabContents[0].classList.add('block');
+        tabContents[1].classList.add('hidden');
+
+        // Add click event listeners to tab buttons
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('bg-primary', 'text-white');
+                });
+
+                // Add active class to clicked button
+                button.classList.add('bg-primary', 'text-white');
+
+                // Hide all content divs
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                    content.classList.remove('block');
+                });
+
+                // Show content div that corresponds to clicked button
+                const targetId = button.getAttribute('data-target');
+                const targetContent = document.querySelector(targetId);
+                targetContent.classList.remove('hidden');
+                targetContent.classList.add('block');
+            });
+        });
+    </script>
+</body>
+
+</html>
