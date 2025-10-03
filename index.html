@@ -20,6 +20,7 @@
         --color-grey-text:#585858;
         --color-gray-border:#D5D5D5;
         --color-grey-light: #EFEFEF;
+        --breakpoint-xs:400px;
       }
 
     </style>
@@ -49,7 +50,7 @@
 </head>
 
 <body>
-    <main class="max-w-screen-xl mx-auto py-10 font-ibm">
+    <main class="max-w-screen-xl mx-auto py-5 md:py-8 lg:py-10 font-ibm px-4 md:px-6 lg:px-8">
         <div class="relative w-full flex justify-center z-0 mb-4">
             <a href="detail.html"
                 class="h5 text-center bg-primary py-1.5 px-10 text-white font-normal inline-flex text-xs leading-tight">
@@ -57,8 +58,8 @@
             <div class="block absolute w-full h-px bg-gray-300 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
         </div>
         <!-- Shorboshesh -->
-        <div class="grid grid-cols-4 gap-[16px]">
-            <div class="w-full flex flex-col gap-[16px]">
+        <div class="grid grid-cols-[repeat(1,1fr)] xs:grid-cols-2 md:grid-cols-4 gap-[16px]">
+            <div class="w-full flex flex-col gap-[16px] order-1">
                 <!-- Small Card Start -->
                 <div class="flex flex-col gap-[16px] pb-[16px] border-b border-black/30 last:border-b-0">
 
@@ -123,7 +124,7 @@
                 <!-- Small Card End -->
 
             </div>
-            <div class="col-span-2 w-full">
+            <div class="xs:col-span-2 w-full order-3 md:order-2">
                 <!-- Feature Image -->
                 <div class="mb-[16px] border-b border-black/30 pb-[16px]">
                     <div class="relative ">
@@ -163,7 +164,8 @@
                                 <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
                             </div>
 
-                            <a href="detail.html" class="font-bold text-[24px]">অগ্রিম রপ্তানি আয়ের ১০ শতাংশ সংরক্ষণের
+                            <a href="detail.html" class="font-bold text-md md:text-[24px]">অগ্রিম রপ্তানি আয়ের ১০ শতাংশ
+                                সংরক্ষণের
                                 বাধ্যবাধকতা
                                 প্রত্যাহার
                             </a>
@@ -188,7 +190,8 @@
                                 <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
                             </div>
 
-                            <a href="detail.html" class="font-bold text-[24px]">অগ্রণী ব্যাংকের এমডিসহ ১১ জনের বিরুদ্ধে
+                            <a href="detail.html" class="font-bold text-md md:text-[24px]">অগ্রণী ব্যাংকের এমডিসহ ১১
+                                জনের বিরুদ্ধে
                                 দুদকের মামলা
 
                             </a>
@@ -213,7 +216,8 @@
                                 <span class="text-xs text-green-600 font-semibold">সারাদেশ</span>
                             </div>
 
-                            <a href="detail.html" class="font-bold text-[24px]">শাহ্জালাল ইসলামী ব্যাংকের ৩৯৯তম সভা
+                            <a href="detail.html" class="font-bold text-md md:text-[24px]">শাহ্জালাল ইসলামী ব্যাংকের
+                                ৩৯৯তম সভা
                                 অনুষ্ঠিত
                             </a>
 
@@ -229,7 +233,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full flex flex-col gap-[16px]">
+            <div class="w-full flex flex-col gap-[16px] order-2 md:order-3">
                 <!-- Ads -->
                 <div class="w-full h-[327px]">
                     <img class="w-full h-full object-cover" alt="ads" src="./assets/images/home/sharadesh/adds.png" />
@@ -296,7 +300,7 @@
             </div>
         </div>
         <!-- Ads Banner -->
-        <div class="w-[80%] mx-auto mt-[50px]">
+        <div class="w-full md:w-[80%] mx-auto mt-[50px]">
             <img src="./assets/images/home/sharadesh/ads-banner.png" alt="ads banner"
                 class="h-full w-full object-cover" />
         </div>
@@ -309,14 +313,14 @@
             <div class="block absolute w-full h-px bg-gray-300 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
         </div>
 
-        <div class="container mx-auto px-4 py-6 grid grid-cols-12 gap-6 ">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-[16px]">
 
             <!-- Left Sidebar -->
-            <aside class="col-span-3 space-y-4">
+            <aside class="lg:col-span-3 space-y-4 order-1">
                 <!-- single small news -->
                 <div class="flex gap-3 items-start border-b border-gray-300 pb-3">
                     <img src="./assets/images/home/nationa_news/image1.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">স্যাটেলাইটের পর কী আসছে</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ২ ঘন্টা আগে</span>
                     </div>
@@ -324,7 +328,7 @@
 
                 <div class="flex gap-3 items-start border-b border-gray-300 pb-3">
                     <img src="./assets/images/home/nationa_news/image2.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">গোপালগঞ্জে সোনা উদ্ধার
                             হচ্ছে</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৪ ঘন্টা আগে</span>
@@ -333,7 +337,7 @@
 
                 <div class="flex gap-3 items-start border-b border-gray-300 pb-3">
                     <img src="./assets/images/home/nationa_news/image3.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">ব্রাহ্মণবাড়িয়ায় নতুন সেতুর
                             উদ্বোধন</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৫ ঘন্টা আগে</span>
@@ -342,7 +346,7 @@
 
                 <div class="flex gap-3 items-start border-b border-gray-300 pb-3">
                     <img src="./assets/images/home/nationa_news/image4.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">ব্রাহ্মণবাড়িয়ায় নতুন সেতুর
                             উদ্বোধন</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৫ ঘন্টা আগে</span>
@@ -351,7 +355,7 @@
 
                 <div class="flex gap-3 items-start pb-3">
                     <img src="./assets/images/home/nationa_news/image5.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">ব্রাহ্মণবাড়িয়ায় নতুন সেতুর
                             উদ্বোধন</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৫ ঘন্টা আগে</span>
@@ -363,15 +367,15 @@
             </aside>
 
             <!-- Main Featured News -->
-            <main class="col-span-6 relative">
+            <main class="md:col-span-2 lg:col-span-6 relative order-3 lg:order-2">
                 <img src="./assets/images/home/nationa_news/image.png" alt="main news"
-                    class="w-full h-[633px] object-cover">
+                    class="w-full h-[300px] md:h-[400px] lg:h-[633px] object-cover">
                 <!-- overlay -->
                 <div
                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6">
                     <span class="text-white text-xs mb-2"><ion-icon name="play" class="text-white text-xs"></ion-icon>
                         রাজনীতি</span>
-                    <h2 class="text-3xl font-bold text-white leading-snug mb-2">
+                    <h2 class="text-2xl md:text-3xl leading-10 md:leading-12 font-bold text-white leading-snug mb-2">
                         <a href="detail.html">গুলির সামনে ভয় পাই নাই, ছোট ডিনে কিছু যায় আসে না</a>
                     </h2>
                     <p class="text-gray-200 text-sm"><i class="ri-time-line"></i> ১২ অক্টোবর, ২০২৪</p>
@@ -379,13 +383,13 @@
             </main>
 
             <!-- Right Sidebar -->
-            <aside class="col-span-3 space-y-4">
+            <aside class="lg:col-span-3 space-y-4 order-2 lg:order-3">
                 <div class="w-auto h-auto object-cover"><img src="./assets/images/home/nationa_news/ads3.png" alt=""
                         srcset=""></div>
 
                 <div class="flex gap-3 items-start border-b border-gray-300 pb-3">
                     <img src="./assets/images/home/nationa_news/image6.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">মাইক্রোবাসে ট্রাকের ধাক্কা</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৩ ঘন্টা আগে</span>
                     </div>
@@ -393,7 +397,7 @@
 
                 <div class="flex gap-3 items-start border-b border-gray-300 pb-3">
                     <img src="./assets/images/home/nationa_news/image7.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">সংসদে নতুন প্রস্তাব</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৪ ঘন্টা আগে</span>
                     </div>
@@ -401,7 +405,7 @@
 
                 <div class="flex gap-3 items-start border-b border-gray-300 pb-3">
                     <img src="./assets/images/home/nationa_news/image8.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">নির্বাচন নিয়ে বিতর্ক</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৫ ঘন্টা আগে</span>
                     </div>
@@ -409,7 +413,7 @@
 
                 <div class="flex gap-3 items-start border-b border-gray-300 pb-3">
                     <img src="./assets/images/home/nationa_news/image9.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">নির্বাচন নিয়ে বিতর্ক</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৫ ঘন্টা আগে</span>
                     </div>
@@ -417,7 +421,7 @@
 
                 <div class="flex gap-3 items-start pb-3">
                     <img src="./assets/images/home/nationa_news/image10.png" alt="" class="w-20 h-14 object-cover">
-                    <div>
+                    <div class="flex flex-col justify-between h-14">
                         <a href="detail.html" class="text-sm font-semibold leading-snug">নির্বাচন নিয়ে বিতর্ক</a>
                         <span class="text-xs text-gray-500"><i class="ri-time-line"></i> ৫ ঘন্টা আগে</span>
                     </div>
@@ -463,9 +467,9 @@
 
 
             <!-- child media card -->
-            <div class="child_media_card flex flex-row gap-5">
+            <div class="child_media_card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 <!-- card1 -->
-                <div class="max-w-sm bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                     <!-- Video Thumbnail -->
                     <div class="relative">
                         <img class="w-full h-48 object-cover" src="/assets/images/home/multimedia_news/Image (1).png"
@@ -491,7 +495,7 @@
                 </div>
 
                 <!-- card2 -->
-                <div class="max-w-sm bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                     <!-- Video Thumbnail -->
                     <div class="relative">
                         <img class="w-full h-48 object-cover" src="/assets/images/home/multimedia_news/Image (2).png"
@@ -517,7 +521,7 @@
                 </div>
 
                 <!-- card3 -->
-                <div class="max-w-sm bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                     <!-- Video Thumbnail -->
                     <div class="relative">
                         <img class="w-full h-48 object-cover" src="/assets/images/home/multimedia_news/Image (3).png"
@@ -543,7 +547,7 @@
                 </div>
 
                 <!-- card4 -->
-                <div class="max-w-sm bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="w-full bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
                     <!-- Video Thumbnail -->
                     <div class="relative">
                         <img class="w-full h-48 object-cover" src="/assets/images/home/multimedia_news/Image.png"
@@ -571,7 +575,7 @@
         </div>
 
         <!-- Ads Banner -->
-        <div class="w-[80%] mx-auto mt-[50px]">
+        <div class="w-full md:w-[80%] mx-auto mt-[50px]">
             <img src="./assets/images/home/multimedia_news/ads-banner.png" alt="ads banner"
                 class="h-full w-full object-cover" />
         </div>
@@ -584,10 +588,10 @@
                 আন্তর্জাতিক</a>
             <div class="block absolute w-full h-px bg-gray-300 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
         </div>
-        <div class="grid grid-cols-4 gap-[16px] mt-[16px]">
-            <div class="col-span-2 w-full h-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[16px] mt-[16px]">
+            <div class="lg:col-span-2 w-full h-full">
                 <!-- Feature Image -->
-                <div class="h-[1000px]">
+                <div class="h-auto md:h-[1000px]">
                     <div class=" relative h-full">
                         <img src=" ./assets/images/home/international/overlay.png" alt="featured img"
                             class="w-full h-full object-cover" />
@@ -603,7 +607,8 @@
                                 </div>
                             </div>
 
-                            <a href="detail.html" class="font-bold text-3xl leading-12">দেশের অন্যতম বাণিজ্যিক ব্যাংক
+                            <a href="detail.html" class="font-bold text-2xl md:text-3xl leading-10 md:leading-12">দেশের
+                                অন্যতম বাণিজ্যিক ব্যাংক
                                 নতুন সহযোগী কোম্পানি
                                 খুলবে সিটি
                                 ব্যাংক
@@ -761,8 +766,8 @@
                 কর্পোরেট কর্ণার</a>
             <div class="block absolute w-full h-px bg-gray-300 top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
         </div>
-        <div class="grid grid-cols-4 gap-[16px] mt-[16px]">
-            <div class="w-full flex flex-col gap-[16px]">
+        <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-[16px] mt-[16px]">
+            <div class="w-full flex flex-col gap-[16px] order-1">
                 <!-- Small Card Start -->
                 <div class="flex flex-col gap-[16px] pb-[16px] border-b border-black/30 last:border-b-0">
 
@@ -825,10 +830,10 @@
                 <!-- Small Card End -->
 
             </div>
-            <div class="col-span-2 w-full h-full">
+            <div class="xs:col-span-2 w-full h-full order-3 md:order-2 overflow-hidden">
                 <!-- Feature Image -->
                 <!-- Swiper Container -->
-                <div class="swiper swiper-1 h-[1000px] relative">
+                <div class="swiper swiper-1 h-[500px] md:h-[1000px] relative">
                     <div class="swiper-wrapper">
 
                         <!-- Slide 1 -->
@@ -850,7 +855,7 @@
                                     </div>
                                 </div>
 
-                                <h2 class="font-bold text-3xl leading-12">
+                                <h2 class="font-bold text-2xl md:text-3xl leading-10 md:leading-12">
                                     <a href="detail.html">ধর্মের লেবাস পরে অনেকেই এখন রাজনীতির তালিম দিচ্ছে</a>
                                 </h2>
 
@@ -880,7 +885,7 @@
                                     </div>
                                 </div>
 
-                                <h2 class="font-bold text-3xl leading-12">
+                                <h2 class="font-bold text-2xl md:text-3xl leading-10 md:leading-12">
                                     <a href="detail.html">দেশের অন্যতম বাণিজ্যিক ব্যাংক নতুন সহযোগী কোম্পানি খুলবে সিটি
                                         ব্যাংক</a>
                                 </h2>
@@ -906,7 +911,7 @@
                 </div>
             </div>
 
-            <div class="w-full flex flex-col gap-[16px]">
+            <div class="w-full flex flex-col gap-[16px] order-2 md:order-3">
                 <!-- Small Card Start -->
                 <div class="flex flex-col gap-[16px] pb-[16px] border-b border-black/30 last:border-b-0">
 
@@ -956,7 +961,7 @@
         </div>
 
         <!-- Ads Banner -->
-        <div class="w-[80%] mx-auto mt-[50px]">
+        <div class="w-full md:w-[80%] mx-auto mt-[50px]">
             <img src="./assets/images/home/corporate/ads-banner.png" alt="ads banner"
                 class="h-full w-full object-cover" />
         </div>
