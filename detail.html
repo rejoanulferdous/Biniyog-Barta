@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <!-- icon cdn -->
+    <!-- Iconic icon cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+    <!-- Swiper CSS for carousel and sliders -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Tailwind Styles -->
     <style type="text/tailwindcss">
         @theme {
         --font-ibm: "IBM Plex Sans", sans-serif;
-        --color-primary:#23A149;
+         --color-primary:#23A149;
         --color-grey-text:#585858;
         --color-gray-border:#D5D5D5;
         --color-grey-light: #EFEFEF;
+        --breakpoint-xs:400px;
       }
 
     </style>
+
     <title>Biniyog Barta - Detail</title>
 </head>
 
@@ -33,7 +39,7 @@
             <div class="block absolute w-full h-px bg-gray-border top-1/2 left-0 -translate-y-1/2 -z-[1]"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-[32px]">
-
+            <!-- Detail -->
             <div class="md:col-span-3 w-full flex flex-col gap-[50px]">
                 <!-- Heading -->
                 <div class="flex flex-col gap-[21px]">
@@ -121,9 +127,10 @@
                     প্রতিনিধি অংশ নিয়েছেন এবং সফলভাবে ইন্দোনেশিয়ার উদ্যোক্তাদের সঙ্গে ব্যাবসায়িক চুক্তি সম্পাদন করেছেন
                 </p>
             </div>
-            <div class="w-full flex flex-col gap-[16px] relative h-fit">
+            <!-- Right Section -->
+            <aside class="w-full flex flex-col gap-[16px] relative h-fit">
                 <!-- Left Divider -->
-                <div class="absolute -left-[16px] top-0 w-px bg-black/30 h-full block"></div>
+                <div class="absolute -left-[16px] top-0 w-px bg-black/30 h-full hidden md:block"></div>
                 <!-- Ads -->
                 <div class="w-full h-[327px]">
                     <img class="w-full h-full object-cover" alt="ads" src="./assets/images/home/sharadesh/adds.png" />
@@ -174,7 +181,7 @@
                     </div>
                 </div>
                 <!-- Small Card End -->
-            </div>
+            </aside>
         </div>
 
 
@@ -389,35 +396,16 @@
             </div>
         </div>
     </main>
-
+    <!-- Swiper JS for carousel and sliders -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-
+    <!-- Iconic and font awesome icons js -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/99dee635b0.js" crossorigin="anonymous"></script>
     <script>
-        const swiper = new Swiper('.swiper-1', {
-            loop: true,
-            slidesPerView: 1,
-            speed: 800,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-custom-next',
-                prevEl: '.swiper-custom-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
 
-
-        // Corporate Swiper (independent from main swiper)
-        // Corporate Swiper (independent)
+        // Carousel Slider
         const corporateSwiper = new Swiper(".swiper-2", {
             slidesPerView: 4,
             spaceBetween: 20,
